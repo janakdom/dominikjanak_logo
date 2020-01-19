@@ -1,5 +1,5 @@
-#LICENSE
- Personal logos of Dominik Janák
+# LICENSE
+### Personal logos of Dominik Janák
 Copyright (c) 2020 Dominik Janák
 
 - This layout can be used for free like an open-source for your own icons or logos projects
@@ -12,4 +12,4 @@ your use of icons indicates your acceptance of this license agreement.
 
 All icons are distributed in the hope that they will be useful, but 
 WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
- or FITNESS FOR A PARTICULAR PURPOSE.
+or FITNESS FOR A PARTICULAR PURPOSE.

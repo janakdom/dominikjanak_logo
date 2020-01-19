@@ -4,30 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <title>Dominik Janák :: Logo</title>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <meta name='author' content='Dominik Janák' />
-    <meta name="description" content='Personal logos of Dominik Janák' />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://www.dominikjanak.cz/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="194x194" href="https://www.dominikjanak.cz/favicon/favicon-194x194.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dominik Janák" />
+    <meta name="description" content="Personal logos of Dominik Janák" />
+    <link rel="icon" type="image/svg" sizes="16x16" href="./images/icon.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,300i,400,400i,500,500i&amp;display=swap&amp;subset=latin-ext" integrity="sha384-3ed5gTyxkOgtZd+2trM24Z/nceuV4MQ7iJs8cagweJmOvnzSanYuaVKQgGm27QL9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style>
-        body {font-family: Roboto; font-weight: 300;}
-        h1 {font-weight: 700; font-size: 375%; text-transform: uppercase; }
-        h2 {font-weight: 300; margin-bottom: 10px;}
-        h3 {font-weight: 300; }
-
-        table thead tr th:first-child {}
-        table thead tr th:nth-child(2) { width: 10%; max-width: 200px; }
-        table thead tr th:last-child { width: 80px; }
+        body {font-family: "Roboto", serif; font-weight: 300;}
+        h1 {font-weight: 700; font-size: 375%; }
+        h2 {font-weight: 300; margin-bottom: 10px; margin-top: 40px;}
+        h3 {font-weight: 300; font-size: 150%; }
         table .badge { padding: 6px 10px; font-size: 80%; font-weight: 400; margin-bottom:2px; }
         table .w-25 {width: 25%;}
         p.text-muted.info {font-size: 90%;}
         img.small { width: 150px; }
         ul li a {font-size: 120%; }
+        .badge { width: 90px; display: block; }
+        footer { font-size: 115%; color: #393939; }
+
+        .table thead tr th:first-child {}
+        .table thead tr th:nth-child(2) { width: 10%; max-width: 200px; }
+        .table thead tr th:last-child { width: 80px; }
+
+
+
     </style>
 
 </head>
@@ -36,20 +40,41 @@
         <main class="pb-5">
             <div class="container mt-5">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1 class="text-center mb-4">Dominik Janák logo</h1>
-                    <p>Examples of individual variants of my logo.</p>
+                    <h1 class="text-center mb-4">Dominik Janák's logos</h1>
+                    <p>Examples of individual variants of my logo for using on the internet.</p>
 
                     <h2>Table of contents</h2>
                     <ul>
+                        <li><a href="#legend">Legend</a></li>
                         <li><a href="#big-logo">Big logo</a></li>
                         <li><a href="#small-logo">Small logo</a></li>
-                        <li><a href="#legend">Legend</a></li>
+                        <li><a href="#license">License</a></li>
                     </ul>
 
+                    <h2 id="legend">Legend</h2>
+                    <table class="table table-borderless table-nonfluid table-sm mb-1">
+                        <tr>
+                            <td><span class="badge badge-success">Foreground</span></td>
+                            <td>Define color of text</td>
+                        <tr/>
+                        <tr>
+                            <td><span class="badge badge-danger">Background</span></td>
+                            <td>Define background behind text</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-warning">Margin</span></td>
+                            <td>Defines the space between the text and the edge</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-primary">Spacing</span></td>
+                            <td>Define spaces between chars</td>
+                        <tr/>
+                    </table>
+                    <p class="text-muted info"><span class="text-danger">*</span> If the tag is not specified in the tables above, specific logo does't implement that value.</p>
 
                     <h2 id="big-logo">Big logo</h2>
 
-                    <table class="table table-borderless table-hover">
+                    <table class="table  table-big-logo table-borderless table-hover">
                         <thead class="thead-dark">
                         <tr>
                             <th scope="col">Logo</th>
@@ -195,7 +220,7 @@
 
                     <h2 id="small-logo" class="mt-5">Small logo</h2>
 
-                    <table class="table table-borderless table-hover">
+                    <table class="table table-small-logo table-center table-borderless table-nonfluid table-hover">
                         <thead class="thead-dark">
                         <tr>
                             <th scope="col">Logo</th>
@@ -299,24 +324,21 @@
                         </tbody>
                     </table>
 
-                    <h2 id="legend">Legend</h2>
-                    <table class="table table-borderless table-sm text-center mb-1">
-                        <tr>
-                            <td><span class="badge badge-success">Foreground</span></td>
-                            <td><span class="badge badge-danger">Background</span></td>
-                            <td><span class="badge badge-warning">Padding</span></td>
-                            <td><span class="badge badge-primary">Spacing</span></td>
-                        <tr/>
-                    </table>
-                    <p class="text-muted info"><span class="text-danger">*</span> If the tag is not specified in the tables above, specific logo does't implement that value.</p>
 
+                    <h2 id="license">License</h2>
+                    <h3>Personal logos of Dominik Janák</h3>
+                    <p><strong>This layout can be used for free like an open-source for your own icons or logos projects.</strong></p>
+                    <p>All the logos presented on this site are exclusively licensed by Dominik Janak.</p>
+                    <p>All the icons can be used on the internet only like backlink icons (with hyperlinks to www.dominikjanak.cz). Any other use is not possible without the written consent of the author.</p>
+                    <p>Unless you have a different license agreement signed by Dominik Janák your use of icons indicates your acceptance of this license agreement.</p>
+                    <p>All icons are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
                 </div>
             </div>
         </main>
         
         <footer class="mt-auto py-3 border-top">
             <div class="container-fluid text-center">
-                <div class="text-muted">© 2020 - <a href="https://www.dominikjanak.cz/" target="_blank" data-toggle="tooltip" data-placement="top" title="Přejít na webovou prezentaci Dominika Janáka">Dominik Janák</a> - All Rights Reserved</div>
+                <div><strong>© 2020 - <a href="https://www.dominikjanak.cz/" target="_blank" data-toggle="tooltip" data-placement="top" title="Přejít na webovou prezentaci Dominika Janáka">Dominik Janák</a> - All Rights Reserved</strong></div>
             </div>
         </footer>
         <!-- Javascript -->

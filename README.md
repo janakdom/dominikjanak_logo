@@ -5,8 +5,8 @@ Examples of individual variants of my logo for using on the internet.
 
 [![Logo](./images/svg/logo_big_inverted.svg)](https://janakdom.github.io/dominikjanak_logo/)
 
-#License
-###Personal logos of Dominik Janák
+# License
+### Personal logos of Dominik Janák
 
 This layout (index.html) can be used for free like an open-source for your own icons or logos projects.
 

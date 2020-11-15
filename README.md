@@ -3,7 +3,7 @@ Examples of individual variants of my logo for using on the internet.
 
 ### [Online view](https://janakdom.github.io/dominikjanak_logo/)
 
-[![Logo](./images/svg/logo_big_inverted.svg)](https://janakdom.github.io/dominikjanak_logo/)
+[![Logo](./images/svg/lbwddd.svg)](https://janakdom.github.io/dominikjanak_logo/)
 
 # CDN
 - https://cdn.jsdelivr.net/gh/janakdom/dominikjanak_logo/

@@ -21,19 +21,17 @@
         table .badge { padding: 6px 10px; font-size: 80%; font-weight: 400; margin-bottom:2px; }
         table .w-25 {width: 25%;}
         p.text-muted.info {font-size: 90%;}
-        img.small { width: 150px; }
+        #small-content img, #ico-content img { width: 150px; }
         ul li a {font-size: 120%; }
         .badge { width: 90px; display: block; }
         footer { font-size: 115%; color: #393939; }
-
         .table thead tr th:first-child {}
         .table thead tr th:nth-child(2) { width: 10%; max-width: 200px; }
         .table thead tr th:last-child { width: 80px; }
-
-
-
+        .dropdown .dropdown-menu {font-family: "Consolas", "Courier New";}
+        .dropdown .dropdown-menu .dropdown-item {padding-top:2px;padding-bottom:2px;text-align: right;}
+        .scrollable-menu {height: auto;max-height: 300px;overflow-x: hidden;}
     </style>
-
 </head>
 
     <body class="d-flex flex-column">
@@ -48,6 +46,9 @@
                         <li><a href="#legend">Legend</a></li>
                         <li><a href="#big-logo">Big logo</a></li>
                         <li><a href="#small-logo">Small logo</a></li>
+                        <li><a href="#ico-logo">Favicon logo (.ico)</a></li>
+                        <li><a href="#naming">Naming</a></li>
+                        <li><a href="#formats">Supporting formats</a></li>
                         <li><a href="#license">License</a></li>
                     </ul>
 
@@ -82,139 +83,8 @@
                             <th scope="col">Link</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_inverted.svg"></td>
-                            <td>
-                                <span class="badge badge-success">White</span>
-                                <span class="badge badge-danger">Default</span>
-                                <span class="badge badge-warning">Default</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td>
-                                <a href="./images/svg/logo_big_inverted.svg" target="_my_logo">SVG</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_light_inverted.svg"></td>
-                            <td>
-                                <span class="badge badge-success">White</span>
-                                <span class="badge badge-danger">Light</span>
-                                <span class="badge badge-warning">Default</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_light_inverted.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr class="bg-dark">
-                            <td><img src="./images/svg/logo_big.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Default</span>
-                                <span class="badge badge-danger">White</span>
-                                <span class="badge badge-warning">Default</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr class="bg-dark">
-                            <td><img src="./images/svg/logo_big_light.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Light</span>
-                                <span class="badge badge-danger">White</span>
-                                <span class="badge badge-warning">Default</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_light.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_transparent.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Default</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">Default</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_transparent.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_light_transparent.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Light</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">Default</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_light_transparent.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr class="bg-dark">
-                            <td><img src="./images/svg/logo_big_white_transparent.svg"></td>
-                            <td>
-                                <span class="badge badge-success">White</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">Default</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_white_transparent.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_transparent_noborder.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Default</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">None</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_transparent_noborder.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_light_transparent_noborder.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Light</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">None</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_light_transparent_noborder.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr class="bg-dark">
-                            <td><img src="./images/svg/logo_big_white_transparent_noborder.svg"></td>
-                            <td>
-                                <span class="badge badge-success">White</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">None</span>
-                                <span class="badge badge-primary">Default</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_white_transparent_noborder.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_transparent_spacing.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Default</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">None</span>
-                                <span class="badge badge-primary">Reduced</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_transparent_spacing.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="./images/svg/logo_big_light_transparent_spacing.svg"></td>
-                            <td>
-                                <span class="badge badge-success">Light</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">None</span>
-                                <span class="badge badge-primary">Reduced</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_light_transparent_spacing.svg" target="_my_logo">SVG</a></td>
-                        </tr>
-                        <tr class="bg-dark">
-                            <td><img src="./images/svg/logo_big_white_transparent_spacing.svg"></td>
-                            <td>
-                                <span class="badge badge-success">White</span>
-                                <span class="badge badge-danger">Transparent</span>
-                                <span class="badge badge-warning">None</span>
-                                <span class="badge badge-primary">Reduced</span>
-                            </td>
-                            <td><a href="./images/svg/logo_big_white_transparent_spacing.svg" target="_my_logo">SVG</a></td>
-                        </tr>
+                        <tbody id="big-content">
+                            <!-- data -->
                         </tbody>
                     </table>
 
@@ -228,101 +98,65 @@
                             <th scope="col">Link</th>
                         </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td><img class="small" src="./images/svg/logo_small_inverted.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">White</span>
-                                    <span class="badge badge-danger">Default</span>
-                                    <span class="badge badge-warning">Default</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_inverted.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr>
-                                <td><img class="small" src="./images/svg/logo_small_light_inverted.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">White</span>
-                                    <span class="badge badge-danger">Light</span>
-                                    <span class="badge badge-warning">Default</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_light_inverted.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr class="bg-dark">
-                                <td><img class="small" src="./images/svg/logo_small.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">Default</span>
-                                    <span class="badge badge-danger">White</span>
-                                    <span class="badge badge-warning">Default</span>
-                                </td>
-                                <td>
-                                    <a href="./images/svg/logo_small.svg" target="_my_logo">SVG</a>
-                                </td>
-                            </tr>
-                            <tr class="bg-dark">
-                                <td><img class="small" src="./images/svg/logo_small_light.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">Light</span>
-                                    <span class="badge badge-danger">White</span>
-                                    <span class="badge badge-warning">Default</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_light.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr>
-                                <td><img class="small" src="./images/svg/logo_small_transparent.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">Default</span>
-                                    <span class="badge badge-danger">Transparent</span>
-                                    <span class="badge badge-warning">Default</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_transparent.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr>
-                                <td><img class="small" src="./images/svg/logo_small_transparent_light.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">Light</span>
-                                    <span class="badge badge-danger">Transparent</span>
-                                    <span class="badge badge-warning">Default</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_transparent_light.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr class="bg-dark">
-                                <td><img class="small" src="./images/svg/logo_small_transparent_white.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">White</span>
-                                    <span class="badge badge-danger">Transparent</span>
-                                    <span class="badge badge-warning">Default</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_transparent_white.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr>
-                                <td><img class="small" src="./images/svg/logo_small_transparent_noborder.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">Default</span>
-                                    <span class="badge badge-danger">Transparent</span>
-                                    <span class="badge badge-warning">None</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_transparent_noborder.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr>
-                                <td><img class="small" src="./images/svg/logo_small_transparent_light_noborder.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">Light</span>
-                                    <span class="badge badge-danger">Transparent</span>
-                                    <span class="badge badge-warning">None</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_transparent_light_noborder.svg" target="_my_logo">SVG</a></td>
-                            </tr>
-                            <tr class="bg-dark">
-                                <td><img class="small" src="./images/svg/logo_small_transparent_white_noborder.svg"></td>
-                                <td>
-                                    <span class="badge badge-success">White</span>
-                                    <span class="badge badge-danger">Transparent</span>
-                                    <span class="badge badge-warning">None</span>
-                                </td>
-                                <td><a href="./images/svg/logo_small_transparent_white_noborder.svg" target="_my_logo">SVG</a></td>
-                            </tr>
+                        <tbody id="small-content">
+                            <!-- data -->
                         </tbody>
                     </table>
+
+                    <h2 id="ico-logo" class="mt-5">Favicon logo (.ico)</h2>
+
+                    <table class="table table-small-logo table-center table-borderless table-nonfluid table-hover">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Logo</th>
+                            <th scope="col">Tags</th>
+                            <th style="min-width: 150px" scope="col">Link</th>
+                        </tr>
+                        </thead>
+                        <tbody id="ico-content">
+                            
+                        </tbody>
+                    </table>
+                    
+                    <h2 id="naming">Naming</h2>
+                    <p>The following table provides a simple nomenclature to identify the type of logo by it's short name.</p>
+                    <h3 id="naming-position">Positions</h3>
+                    <p>The type of logo can be easily identified by its name. <b>The first character is always l</b> like 'logo'. <b>The second</b> can be <b>b or s</b> where <b>b means 'big'</b> logo and <b>s means 'small'</b> logo. The other characters are from left to right according to the table.</p>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr><th class="text-center" style="font-size:130%;" colspan="6">Big logo</th></tr>
+                            <tr>
+                                <th>#</th>
+                                <th>Fore color</th>
+                                <th>Back color</th>
+                                <th>Padding</th>
+                                <th>Spacing</th>
+                                <th>Short name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="naming-big-content">
+                            <!-- data -->
+                        </tbody>
+                    </table>    
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr><th class="text-center" style="font-size:130%;" colspan="6">Small (squared) logo</th></tr>
+                            <tr>
+                                <th>#</th>
+                                <th>Fore color</th>
+                                <th>Back color</th>
+                                <th>Padding</th>
+                                <th>Spacing</th>
+                                <th>Short name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="naming-small-content">
+                            <!-- data -->
+                        </tbody>
+                    </table>
+                    
+                    <h2 id="formats">Supporting formats</h2>
+                    <p>Logos are only available in two formats. These formats are PNG and SVG.</p>
 
 
                     <h2 id="license">License</h2>
@@ -346,5 +180,140 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- End of Javascript -->
+    
+        <script>
+            let iterable = 1;
+            
+            function printImages(type) 
+            {
+                let data = [];
+                let sizes = [];
+                if(type === "big") 
+                {
+                    data = [["lbdwdd", "dark", "white", "default", "default"],
+                            ["lbdwdn", "dark", "white", "default", "narrowed"],
+                            ["lbdtdd", "dark", "transparent", "default", "default"],
+                            ["lbdtdn", "dark", "transparent", "default", "narrowed"],
+                            ["lbdtnd", "dark", "transparent", "none", "default"],
+                            ["lbdtnn", "dark", "transparent", "none", "narrowed"],
+                            ["lblwdd", "light", "white", "default", "default"],
+                            ["lblwdn", "light", "white", "default", "narrowed"],
+                            ["lbltdd", "light", "transparent", "default", "default"],
+                            ["lbltdn", "light", "transparent", "default", "narrowed"],
+                            ["lbltnd", "light", "transparent", "none", "default"],
+                            ["lbltnn", "light", "transparent", "none", "narrowed"],
+                            ["lbwddd", "white", "dark", "default", "default"],
+                            ["lbwddn", "white", "dark", "default", "narrowed"],
+                            ["lbwldd", "white", "light", "default", "default"],
+                            ["lbwldn", "white", "light", "default", "narrowed"],
+                            ["lbwtdd", "white", "transparent", "default", "default"],
+                            ["lbwtdn", "white", "transparent", "default", "narrowed"],
+                            ["lbwtnd", "white", "transparent", "none", "default"],
+                            ["lbwtnn", "white", "transparent", "none", "narrowed"]
+                           ];
+                    sizes = [100, 150, 200, 250, 300, 400, 500, 600, 700, 800, 900, 1000, 1500, 2000];
+                }
+                
+                if(type === "small")
+                {
+                    data = [["lsdwdd", "dark", "white", "default", "default"],
+                            ["lsdtdd", "dark", "transparent", "default", "default"],
+                            ["lsdtnd", "dark", "transparent", "none", "default"],
+                            ["lslwdd", "light", "white", "default", "default"],
+                            ["lsltdd", "light", "transparent", "default", "default"],
+                            ["lsltnd", "light", "transparent", "none", "default"],
+                            ["lswddd", "white", "dark", "default", "default"],
+                            ["lswldd", "white", "light", "default", "default"],
+                            ["lswtdd", "white", "transparent", "default", "default"],
+                            ["lswtnd", "white", "transparent", "none", "default"]
+                           ];
+                    sizes = [16, 24, 25, 32, 50, 57, 60, 70, 72, 75, 76, 100, 114, 120, 144, 150, 152, 180, 192, 200, 250, 300, 310, 350, 400, 450, 500, 512];
+                }
+                
+                if(type === "ico")
+                {
+                    data = [["lsdwdd", "dark", "white", "default", "default"],
+                            ["lslwdd", "light", "white", "default", "default"],
+                            ["lswddd", "white", "dark", "default", "default"],
+                            ["lswldd", "white", "light", "default", "default"]
+                           ];
+                    sizes = [64, 256];
+                }
+
+                let output = "";
+                let naming = "";
+                // process
+                data.forEach(i => {
+                    output += generateItem(i, sizes, type);
+                    naming += generateNamingItem(i);
+                });
+                
+                if(type === "big") {
+                    $("#big-content").html(output);
+                    $("#naming-big-content").html(naming);
+                }
+                
+                if(type === "small") {
+                    $("#small-content").html(output);
+                    $("#naming-small-content").html(naming);
+                }
+                
+                if(type === "ico") {
+                    $("#ico-content").html(output);
+                }
+            }
+            
+            function generateItem(item, sizes, type)
+            {
+                let dark = isDark(item);
+                let response = "";
+                
+                if(type === "ico")
+                {
+                    response = `<tr><td><img src="images/svg/${item[0]}.svg"></td><td><span class="badge badge-success">${item[1]}</span><span class="badge badge-danger">${item[2]}</span><span class="badge badge-warning">${item[3]}</span><span class="badge badge-primary">${item[4]}</span></td><td>`;
+                    
+                    sizes.forEach(i => {
+                        response += `<a class="btn btn-secondary w-100 text-white mb-2" target="_logo" title="Maximum width and height is ${i} px" href="images/ico/${item[0]}_${i}.ico">ICO (${i} px)</a>`;
+                    });
+
+                    response += `</td></tr>`;
+                }
+                else
+                {                
+                    response = `<tr ${dark}><td><img src="images/svg/${item[0]}.svg" /></td><td><span class="badge badge-success">${item[1]}</span><span class="badge badge-danger">${item[2]}</span><span class="badge badge-warning">${item[3]}</span><span class="badge badge-primary">${item[4]}</span></td><td><a class="btn btn-secondary w-100 text-white mb-2" target="_logo" href="images/svg/${item[0]}.svg">SVG</a><div class="dropdown show"><a class="btn btn-secondary w-100 text-white dropdown-toggle" target="_logo" data-toggle="dropdown">PNG</a><div class="dropdown-menu scrollable-menu">`;
+               
+                    sizes.forEach(i => {
+                        response += `<a class="dropdown-item" target="_logo" href="images/png/${item[0]}_${i}.png">${i} px</a>`;
+                    });
+               
+                    response += `</div></div><\/td><\/tr>`;
+                }
+                return response;
+            }
+            
+            function generateNamingItem(item){
+                let name = item[0];
+                let fg = item[1];
+                let bg = item[2];
+                let pd = item[3];
+                let sp = item[4];
+                return `<tr><th>${iterable++}</th><td>${fg}</td><td>${bg}</td><td>${pd}</td><td>${sp}</td><td>${name}</td></tr>`;
+            }
+            
+            function isDark(item)
+            {
+                let fg = item[1];
+                let bg = item[2];
+                let pd = item[3];
+                let sp = item[4];
+                if((fg === "white" && bg === "transparent") || bg === "white")
+                    return `class="bg-dark"`;
+                return "";
+            }            
+            
+            printImages("big");
+            printImages("small");
+            printImages("ico");
+        </script>
     </body>
 </html>
